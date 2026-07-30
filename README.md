@@ -8,5 +8,7 @@ Change host/domain name of Tactical RMM server
 
 # Setup & Run
 curl -L -O https://raw.githubusercontent.com/smileymattj/TacticalRMM-ChgHost/refs/heads/main/chghost.sh
+
 chmod +x chghost.sh
+
 ./chghost.sh
