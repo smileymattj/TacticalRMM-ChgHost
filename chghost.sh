@@ -74,8 +74,8 @@ done
 printf '\33[H\33[2J'
 for i in meshcentral nats nats-api rmm nginx
 do
+    cp -rp /etc/nginx/sites-available/* /etc/nginx/sites-enabled/
     systemctl restart $i
     systemctl status $i
     echo -e "\n"
-    cp -rp /etc/nginx/sites-available/* /etc/nginx/sites-enabled/
 done
