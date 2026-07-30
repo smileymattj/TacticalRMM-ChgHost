@@ -38,15 +38,15 @@ echo -e "\n"
 
 
 # Apply Settings
+if [[ $chgHost -eq 1 ]]; then
+    chgFile[6]="/etc/hosts"
+    chgFile[7]="/etc/hostname"
+fi
+
 if [[ $dryRun -eq 0 ]]; then
     mkdir -p $backupDir
     cp -rp /meshcentral/meshcentral-data/signedagents $backupDir
     rm -r /meshcentral/meshcentral-data/signedagents/*
-fi
-
-if [[ $chgHost -eq 1 ]]; then
-    chgFile[6]="/etc/hosts"
-    chgFile[7]="/etc/hostname"
 fi
 
 
