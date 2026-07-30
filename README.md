@@ -4,7 +4,7 @@ Change host/domain name of Tactical RMM server
 ## Disclaimer
 Use at your own risk
 - Make Backups!
-- Have plan b to access clients if scripts fail
+- Have a plan b to access clients if scripts fail
 
 ## Prerequisites
 - Register Domain name
