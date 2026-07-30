@@ -8,4 +8,4 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\TacticalRMM /f /v BaseURL /d https://api.$Ne
 
 ((Get-Content -Raw -Path $MeshPath) -replace $OldURL,$NewURL) | Set-Content -Path $MeshPath
 
-Restart-Service -Name $RMMServices
+Restart-Service -Name "$RMMServices"
