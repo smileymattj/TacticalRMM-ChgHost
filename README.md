@@ -1,6 +1,11 @@
 # TacticalRMM-ChgHost
 Change host/domain name of Tactical RMM server
 
+## Disclaimer
+Use at your own risk
+- Make Backups!
+- Have backup plan b to access clients if scripts fail
+
 ## Prerequisites
 - Register Domain name
 - Add {api, mesh, rmm} A Records
