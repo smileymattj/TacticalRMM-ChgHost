@@ -56,12 +56,12 @@ do
     printf '\33[H\33[2J'
     echo -e "Changing File: \e[$YELLOW$i\e[$NC"
     echo -e "\n"
-    sed "s/"$1"/"$2"/g" $i | diff --color $i -
+    sed "s/$1/$2/g" $i | diff --color $i -
     echo -e "\n"
 
     if [[ $dryRun -eq 0 ]]; then
         cp -p $i $backupDir/
-        sed -i "s/"$1"/"$2"/g" $i
+        sed -i "s/$1/$2/g" $i
     fi
 
     read -n 1 -r -s -p $'Press enter to continue...\n'
